@@ -17,8 +17,8 @@ This Flask application provides a simple but powerful grammar correction service
 1. Clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/yourusername/flask-grammar-correction-service.git
-cd flask-grammar-correction-service
+git clone https://github.com/Sourolio10/flask-grammar-correction-app.git
+cd flask-grammar-correction-app
 ```
 
 2. Install the required Python packages.
@@ -27,7 +27,7 @@ cd flask-grammar-correction-service
 pip install -r requirements.txt
 ```
 
-3. Configure your application settings by editing the `config/db_config.py` and `config/ai_config.py` files to match your database and AI service credentials.
+3. Configure your application settings by editing the `config/db_config.py` and `config/ai_config.py` files to match your database and AI service credentials or use python-dotenv 
 
 4. Set up your database schema as required by the `models/user.py` (assuming you have a `UserDBHandler` managing database interactions).
 
@@ -35,7 +35,6 @@ pip install -r requirements.txt
 
 ```bash
 export FLASK_APP=run.py
-export FLASK_ENV=development # Use 'production' for production environments
 flask run
 ```
 
