@@ -1,4 +1,6 @@
 from flask import Flask, request, jsonify, make_response
+from dotenv import load_dotenv
+load_dotenv()
 #from models.user import User
 from middleware.authentication import login_required
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
